@@ -1,0 +1,95 @@
+{
+  "name": "Chamado",
+  "type": "object",
+  "properties": {
+    "escola_id": {
+      "type": "string",
+      "title": "Escola"
+    },
+    "solicitante_id": {
+      "type": "string",
+      "title": "Solicitante"
+    },
+    "tecnico_id": {
+      "type": "string",
+      "title": "T\u00e9cnico respons\u00e1vel"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "pequenos_reparos",
+        "falta_energia",
+        "outros"
+      ],
+      "title": "Categoria"
+    },
+    "local_especifico": {
+      "type": "string",
+      "title": "Local espec\u00edfico"
+    },
+    "quantidade_estimada": {
+      "type": "string",
+      "title": "Quantidade estimada"
+    },
+    "afeta_cozinha_bomba": {
+      "type": "boolean",
+      "default": false,
+      "title": "Afeta cozinha ou bomba d'\u00e1gua"
+    },
+    "tipo_falta_energia": {
+      "type": "string",
+      "enum": [
+        "parcial",
+        "total"
+      ],
+      "title": "Tipo de falta de energia"
+    },
+    "descricao": {
+      "type": "string",
+      "title": "Descri\u00e7\u00e3o"
+    },
+    "foto_abertura_url": {
+      "type": "string",
+      "title": "Foto de abertura"
+    },
+    "prioridade": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "alta",
+        "emergencia"
+      ],
+      "default": "normal",
+      "title": "Prioridade"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "aberto",
+        "atribuido",
+        "a_caminho",
+        "em_atendimento",
+        "concluido",
+        "cancelado"
+      ],
+      "default": "aberto",
+      "title": "Status"
+    },
+    "data_abertura": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Data de abertura"
+    },
+    "data_conclusao": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Data de conclus\u00e3o"
+    }
+  },
+  "required": [
+    "escola_id",
+    "categoria",
+    "prioridade",
+    "status"
+  ]
+}

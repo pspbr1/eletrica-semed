@@ -1,0 +1,38 @@
+{
+  "name": "Escola",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "codigo_inep": {
+      "type": "string",
+      "title": "C\u00f3digo INEP"
+    },
+    "endereco": {
+      "type": "string",
+      "title": "Endere\u00e7o"
+    },
+    "bairro": {
+      "type": "string",
+      "title": "Bairro"
+    },
+    "latitude": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "title": "Longitude"
+    },
+    "contato_telefone": {
+      "type": "string",
+      "title": "Telefone de contato"
+    }
+  },
+  "required": [
+    "nome",
+    "bairro"
+  ]
+}

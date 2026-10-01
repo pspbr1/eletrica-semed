@@ -1,0 +1,63 @@
+{
+  "name": "AtendimentoLog",
+  "type": "object",
+  "properties": {
+    "chamado_id": {
+      "type": "string",
+      "title": "Chamado"
+    },
+    "tecnico_id": {
+      "type": "string",
+      "title": "T\u00e9cnico"
+    },
+    "data_checkin": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Data de check-in"
+    },
+    "data_checkout": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Data de check-out"
+    },
+    "lat_checkin": {
+      "type": "number",
+      "title": "Latitude do check-in"
+    },
+    "long_checkin": {
+      "type": "number",
+      "title": "Longitude do check-in"
+    },
+    "foto_antes_url": {
+      "type": "string",
+      "title": "Foto do antes"
+    },
+    "foto_depois_url": {
+      "type": "string",
+      "title": "Foto do depois"
+    },
+    "causa_raiz": {
+      "type": "string",
+      "title": "Causa raiz"
+    },
+    "relatorio_servico": {
+      "type": "string",
+      "title": "Relat\u00f3rio de servi\u00e7o"
+    },
+    "nome_recebedor": {
+      "type": "string",
+      "title": "Nome do recebedor"
+    },
+    "cargo_recebedor": {
+      "type": "string",
+      "title": "Cargo do recebedor"
+    },
+    "assinatura_url": {
+      "type": "string",
+      "title": "Assinatura digital"
+    }
+  },
+  "required": [
+    "chamado_id"
+  ]
+}
